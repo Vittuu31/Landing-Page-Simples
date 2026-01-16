@@ -1,0 +1,19 @@
+.link {
+    position: fixed;
+    bottom: 10px;
+}
+
+* {
+    margin: 0;
+}
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background: grey;
+    top: 0;
+}

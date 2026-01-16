@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeferLinda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+     }
+     
+     body{
+        background-image: url(https://preview.redd.it/nefer-x-lauma-via-zukeroon-v0-ratgcf3o3lnf1.jpeg?width=1080&crop=smart&auto=webp&s=ec5be723b4f45bc8e0d403b6bdc1768dc0f04462);
+        background-size: cover;
+        background-position: top center;
+    }
+    #titulo {
+        background: rgba(1, 61, 1, 0.363);
+    }
+    
+    #titulo div{
+        width: 100%;
+        display: outside;
+        justify-content: center;
+        margin: 0 auto;
+     }
+     
+      #titulo a {
+        color: #15ff00;
+        text-decoration: none;
+        font-family: "Pacifico", cursive;
+        font-size: 24px;
+     }
+
+     .btn-ult {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        background: #15ff00;
+        color: black;
+        border-radius: 8px;
+        text-align: left;
+        width: fit-content;
+        cursor: pointer;
+        font-weight: bold;
+     }
+    
+     .modal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+     }
+
+     .modal-content {
+        background: #000;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+     }
+
+     .modal video {
+        width: 100%;
+         border-radius: 10px;
+     }
+
+     .close {
+        color: #fff;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+     }
+    </style>
+</head>
+<body>
+    <header id="titulo">
+        <div>
+
+    <h1 class="Nefer">
+     <a href="https://i.pinimg.com/736x/32/e5/1f/32e51f7820be48aba01820cfe1934a10.jpg" target="_blank">Nefer</a>                
+    </h1>
+ </div>
+
+    </header>
+    
+    <div class="btn-ult" id="openModal">Ult</div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times</span>
+            <video controls>
+                <source src="https://packaged-media.redd.it/z6x0blaw24of1/pb/m2-res_1080p.mp4?m=DASHPlaylist.mpd&v=1&e=1757480400&s=272f9b4d9dd03fc80c692670f4fb077da566be74" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const openModal = documet.getElementById("openModal");
+        const modal = document.getElementById("videoModal");
+        const closeModal = document.getElementById("closeModal")
+
+        openModel.onclick = function () {
+            modal.style.display = "flex";
+        };
+
+        closeModal.onclick = function () {
+            modal.style.display = "nome";
+        };
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
