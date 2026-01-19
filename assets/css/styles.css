@@ -213,6 +213,10 @@
         display: block;
     }
 
+    #contact .intro-img {
+        display: none;
+    }
+
     #home .main-content {
         padding: 6rem 2rem;
     }
